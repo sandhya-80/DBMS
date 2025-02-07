@@ -23,3 +23,7 @@ CREATE TABLE Order_Items (
     product_id INT FOREIGN KEY REFERENCES Products(product_id) ON DELETE CASCADE,
     quantity INT CHECK (quantity >= 1) NOT NULL
 );
+SELECT * FROM Customers;
+SELECT * FROM Products;
+SELECT * FROM Orders;
+SELECT * FROM Order_Items;
